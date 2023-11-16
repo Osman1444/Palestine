@@ -1,0 +1,159 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+nav{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 2rem 3rem;
+    /* background-image: url("https://www.qrcs.org.qa/PublishingImages/Campaigns/2023/For%20Plastine/Pal23%20Web%20Banner2%20(1).jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    transition: 0.5s;
+    box-shadow: 0.5rem 1rem 2rem #555;
+    padding: 1rem;
+    width: 80rem;
+    background-color: #eee;
+    border: 0;
+    position: relative;
+}
+
+nav h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    z-index: 3;
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    user-select: none;
+    transition: 0.1s ease-in;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    margin: 1rem;
+}
+nav h1:hover{
+    transform: scale(1.01);
+}
+
+nav .Links{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .Links a{
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    z-index: 3;
+    transition: 0.5s cubic-bezier(0.91, 0.02, 1, -0.3);
+    font-family: 'Ruwudu', serif;
+    transform: translate(0, 1rem);
+}
+nav .Links a:hover{
+    transform: scale(1.1);
+}
+nav .Links :nth-child(1):hover ~ .bg{
+    left: 31rem;
+    width: 16rem;
+    background-color: #000;
+}
+nav .Links :nth-child(1):hover{
+    color: #fff;
+}
+nav .Links :nth-child(2):hover ~ .bg{
+    left: 48rem;
+    width: 22rem;
+    background-color: darkred;
+}
+nav .Links :nth-child(2):hover{
+    color: #fff;
+}
+nav .Links :nth-child(3):hover ~ .bg{
+    left: 71rem;
+    width: 9rem;
+    background-color: cadetblue;
+}
+nav .Links :nth-child(3):hover{
+    color: #fff;
+}
+nav .Links .bg{
+    background-color: green;
+    backdrop-filter: blur(2.5px);
+    width: 27rem;
+    height: 6rem;
+    position: absolute;
+    left: 2rem;
+    border-radius: 25px;
+    transition: 0.5s cubic-bezier(0.91, 0.02, 1, -0.3);
+}
+
+main h1{
+    font-family: 'Ruwudu', serif;
+    margin-right: 7.5rem;
+    font-size: 5rem;
+    user-select: none;
+}
+main section{
+    margin-bottom: 10rem;
+    width: 100vw;
+}
+
+main .Story iframe{
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0.25rem 0.5rem 0.75rem gray;
+    /* float: left; */
+    margin-right: 5rem;
+}
+main .Boycott{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+main .Boycott div{
+    font-size: 1.25rem;
+    font-family: 'Lemonada', cursive;
+    border: 5px dashed black;
+    border-radius: 50px;
+    width: 22rem;
+    height: 30rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 2.5rem;
+    transition: 0.25s;
+    overflow-y: scroll;
+}
+main .Boycott div:hover{
+    transform: scale(1.05) translate(0, -1.5rem);
+}
+
+main .Boycott div h2{
+    color: darkred;
+}
+
+main .Boycott li{
+    transition: 0.25s;
+    border-radius: 15px;
+    padding: 0.4rem;
+    cursor: default;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main .Boycott li:hover{
+    background-color: #eee;
+}
